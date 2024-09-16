@@ -25,6 +25,24 @@ A simple RESTful service built with Spring Boot for managing a library's books. 
 - **H2 Database**: In-memory database for quick testing and development.
 - **Maven**: For build and dependency management.
 
+## Api Endpoints
+GET http://localhost:9090/api/books
+POST http://localhost:9090/api/books
+   e.g. {
+         "title": "Effective Java",
+         "author": "Joshua Bloch",
+         "isbn": "9780134685991",
+         "publishedYear": 2018
+        }
+
+PUT http://localhost:9090/api/books/2
+    e.g. {
+            "title": "Effective Java - 3rd Edition",
+            "author": "Joshua Bloch",
+            "isbn": "9780134685991",
+            "publishedYear": 2018
+         }
+
 ## Getting Started
 To get a local copy of the project up and running, follow these steps.
 
@@ -37,4 +55,5 @@ To get a local copy of the project up and running, follow these steps.
 1. Clone the repository:
    ```bash
    git clone https://github.com/mailstoakumar/library-service.git
+
 
